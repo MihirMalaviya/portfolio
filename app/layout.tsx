@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        </style>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        />
       </head>
       {/* <body className={inter.className}></body> */}
       {children}

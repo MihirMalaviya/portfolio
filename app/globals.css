@@ -26,20 +26,25 @@ body {
   }
 }
 
-.grid {
+.grid{
   position: absolute;
   inset: 0;
-  height: 100%;
-  width: 100%;
+  padding:0px;
+  margin:0px;
+}
+
+.grid::before {
+  padding:0px;
+  margin:0px;
+  content:"";
+  position: absolute;
+  top: 0; /* Stick to the top of the viewport */
+  inset: 0;
+  height: 100rem;
+  width: 99vw;
   background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
     linear-gradient(to bottom, #80808012 1px, transparent 1px);
   background-size: 24px 24px;
-  
-  -webkit-mask-image: radial-gradient(
-    ellipse 50% 50% at 50% 50%,
-    #000 70%,
-    transparent 100%
-  );
   mask-image: radial-gradient(
     ellipse 50% 50% at 50% 50%,
     #000 70%,
