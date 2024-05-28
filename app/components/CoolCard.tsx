@@ -36,19 +36,20 @@ const CoolCard = () => {
           ml-40
           "
       >
-        <CardBody className="relative group hover:shadow-2xl hover:shadow-sky-500/[.5] !transform !ease-out !duration-500 bg-sky-400 hover:bg-sky-500/[.5] border-sky-500/[0.5] !w-full sm:w-[30rem] h-auto rounded-2xl p-6 border">
+        <CardBody className="relative group hover:shadow-2xl hover:shadow-purple-500/[.5] !transform !ease-out !duration-500 bg-zinc-700 hover:bg-purple-400/[.5] border-zinc-500/[0.5] !w-full sm:w-[30rem] h-auto rounded-2xl p-6 border">
           <CardItem
             translateZ="60"
-            className="text-xl font-bold text-stone-900 group-hover:text-sky-50"
+            className="text-xl font-bold text-zinc-200 group-hover:text-zinc-50"
           >
-            Wire World
+            Title
           </CardItem>
           <CardItem
             as="p"
             translateZ="70"
-            className="text-sm max-w-sm mt-2 text-stone-800 group-hover:text-sky-100"
+            className="text-sm max-w-sm mt-2 text-zinc-300 group-hover:text-zinc-100"
           >
-            A Cellular automata used to teach logic gates to freshmen.
+            description. description. description. description. description.
+            description. description. description. description.
           </CardItem>
           <CardItem
             translateZ="100"
@@ -74,10 +75,10 @@ const CoolCard = () => {
               translateZ={50}
               as="button"
               className="
-                  group-hover:text-yellow-100
-                  group-hover:bg-yellow-500/[.5] group-hover:border-yellow-500/[.5] border 
+                  group-hover:text-yellow-50 border-yellow-500/[.5]
+                  group-hover:bg-yellow-400/[.7] group-hover:border-yellow-500/[.5] border 
                   px-4 py-2 rounded-lg text-xs text-amber-800 bg-yellow-300 
-                  hover:!bg-yellow-200 hover:!text-amber-900 font-bold
+                  hover:!bg-yellow-300 hover:!text-amber-900 font-bold
                   "
             >
               Try now →
