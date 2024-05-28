@@ -19,12 +19,12 @@ const CoolCard = () => {
     <motion.div
       ref={ref}
       style={{
-        rotateY,
-        rotateX,
+        // rotateY,
+        // rotateX,
         opacity: scrollYProgress,
-        // translateY,
-        translateX,
-        scale,
+        translateY,
+        // translateX,
+        // scale,
         // perspective: 1000,
       }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
