@@ -104,6 +104,7 @@ const CoolCard: React.FC<SpotifyProfileProps> = ({
         <div className="flex mt-4">
           {descriptionCards.map((card, index) => (
             <span
+              key={index}
               className="font-mono italic text-sm
              bg-primary-400/[.5] border-primary-400/[.25] hover:border-primary-300/[.5] border hover:bg-primary-400/[.75] 
              
