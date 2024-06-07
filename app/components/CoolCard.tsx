@@ -36,7 +36,7 @@ const CoolCard = () => {
           ml-40
           "
       >
-        <CardBody className="relative group hover:shadow-2xl hover:shadow-purple-500/[.5] !transform !ease-out !duration-500 bg-zinc-700 hover:bg-purple-400/[.5] border-zinc-500/[0.5] !w-full sm:w-[30rem] h-auto rounded-2xl p-6 border">
+        <CardBody className="relative group hover:shadow-2xl hover:shadow-primary-500/[.5] !transform !ease-out !duration-500 bg-zinc-700 hover:bg-primary-400/[.5] border-zinc-500/[0.5] !w-full sm:w-[30rem] h-auto rounded-2xl p-6 border">
           <CardItem
             translateZ="60"
             className="text-xl font-bold text-zinc-200 group-hover:text-zinc-50"

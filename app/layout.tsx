@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { fairyDustCursor } from "cursor-effects";
+import MainNavbar from "./components/MainNavbar";
+import { useState, useEffect } from "react";
+import MouseEffect from "./components/MouseEffect";
 
 export const metadata: Metadata = {
   title: "Mihir Malaviya",
@@ -25,7 +27,12 @@ export default function RootLayout({
         />
       </head>
       {/* <body className={inter.className}></body> */}
-      {children}
+      <body className="!bg-stone-950 overflow-x-hidden scroll-smooth">
+        <MouseEffect />
+        <MainNavbar />
+
+        {children}
+      </body>
     </html>
   );
 }

@@ -27,10 +27,11 @@ body {
 }
 
 .grid{
-  position: absolute;
+  position: fixed;
   inset: 0;
   padding:0px;
   margin:0px;
+
 }
 
 .grid::before {
@@ -40,7 +41,7 @@ body {
   position: absolute;
   top: 0; /* Stick to the top of the viewport */
   inset: 0;
-  height: 100rem;
+  height: 100vh;
   width: 99vw;
   background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
     linear-gradient(to bottom, #80808012 1px, transparent 1px);
@@ -55,4 +56,18 @@ body {
 html, body {
   max-width: 100%;
   /* overflow-x: hidden; */
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
 }
