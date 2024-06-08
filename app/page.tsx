@@ -43,7 +43,7 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
               <h1 className="text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl text-shadow-xl shadow-black/[.5]">
                 <a href="/">Mihir Malaviya</a>
               </h1>
-              <h2 className="mt-3 text-lg font-medium tracking-tight text-primary-300 sm:text-xl bg-blue-950 w-fit bg-opacity-10 text-shadow-lg shadow-black/[.5]">
+              <h2 className="mt-3 text-lg font-medium tracking-tight text-primary-300 sm:text-xl w-fit text-shadow-sm shadow-primary-200/[.2]">
                 <ReactTyped
                   strings={["Aspiring Software Engineer"]}
                   typeSpeed={60}
@@ -54,7 +54,7 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
                 />
                 {/* Aspiring Software Engineer 💻 */}
               </h2>
-              <p className="mt-4 max-w-xs leading-normal text-shadow shadow-black/[.5]">
+              <p className="mt-4 max-w-xs leading-normal text-shadow-lg shadow-black/[.5]">
                 Please hire me. Please hire me. Please hire me. Please hire me.
               </p>
               <br />
@@ -66,7 +66,7 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
                     navigator.clipboard.writeText("mihirmalaviya1@gmail.com");
                   }}
                 >
-                  <u className="underline-offset-4 text-yellow-100 hover:text-yellow-300 bg-yellow-700/[.5] hover:bg-yellow-700/[.6] border border-yellow-100/[.05] p-1 rounded transition duration-200 transform">
+                  <u className="underline-offset-4 text-secondary-100 hover:text-secondary-300 bg-secondary-700/[.5] hover:bg-secondary-700/[.6] border border-secondary-100/[.05] p-1 rounded transition duration-200 transform">
                     mihirmalaviya1@gmail.com
                   </u>
                 </button>
@@ -74,10 +74,10 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
             </div>
           </header>
           <div className="lg:top-0 lg:flex lg:max-h-screen lg:w-2/3 lg:flex-col lg:justify-between lg:py-24">
-            <h2 className="mt-5 mb-8 text-sm font-bold uppercase tracking-widest text-zinc-200 lg:sr-only text-shadow shadow-black/[.5]">
+            <h2 className="mt-5 mb-8 text-sm font-bold uppercase tracking-widest text-zinc-200 lg:sr-only text-shadow-lg shadow-black/[.5]">
               About Me
             </h2>
-            <p className="mb-4 text-shadow shadow-black/[.5]">
+            <p className="mb-4 text-shadow-lg shadow-black/[.5]">
               Please hire me. Please hire me. Please hire me. Please hire me.
               Please hire me. Please hire me. Please hire me. Please hire me.
               Please hire me. Please hire me. Please hire me. Please hire me.
@@ -169,6 +169,7 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
           description="A GPA calculator website tailored to fit the grading system of my highschool, the Morris County School of Technology."
           descriptionCards={["React", "Next", "Tailwind"]}
           image="MCSTGPA.png"
+          href="https://mcst-gpa-calculator.vercel.app/"
         />
         <ProjectSection
           label="Featured Project"

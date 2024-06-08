@@ -12,7 +12,7 @@ export default function MainNavbar() {
   return (
     <Navbar
       className="py-10 pb-5 px-20 w-100 z-50
-      sticky xl:block hidden"
+      sticky xl:block hidden bg-gradient-to-b from-zinc-900 to-transparent via-zinc-900/[.25]"
     >
       <NavbarBrand>
         {/* <AcmeLogo /> */}

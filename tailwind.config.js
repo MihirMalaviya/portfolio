@@ -52,7 +52,8 @@ const config = {
         ],
       },
       colors: {
-        primary: { ...colors.sky, DEFAULT: colors.sky[500] },
+        primary: { ...colors.cyan, DEFAULT: colors.cyan[500] },
+        secondary: { ...colors.yellow, DEFAULT: colors.yellow[500] },
       },
     },
   },

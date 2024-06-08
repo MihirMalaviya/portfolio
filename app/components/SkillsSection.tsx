@@ -1,4 +1,5 @@
 import React from "react";
+import DescriptionBadge from "./DescriptionBadge";
 
 interface TableProps {
   data: [string, string[]][];
@@ -11,7 +12,7 @@ const Table: React.FC<TableProps> = ({ data }) => {
         {data.map((column, index) => (
           <div
             key={index}
-            className="flex-1 pr-10 py-2 text-left text-primary-300 text-lg font-bold mb-5 "
+            className="flex-1 pr-10 py-2 text-left text-zinc-300 text-lg font-bold mb-5 "
           >
             {column[0]}
           </div>
@@ -25,8 +26,10 @@ const Table: React.FC<TableProps> = ({ data }) => {
     return Array.from({ length: maxRows }, (_, rowIndex) => (
       <div key={rowIndex} className="flex">
         {data.map((column, colIndex) => (
-          <div key={colIndex} className="flex-1 pr-10 py-2">
-            {column[1][rowIndex] || ""}
+          <div key={colIndex} className="flex-1 mr-10 my-2">
+            <DescriptionBadge key={colIndex} className="w-fit not-italic">
+              {column[1][rowIndex] || ""}
+            </DescriptionBadge>
           </div>
         ))}
       </div>
