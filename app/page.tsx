@@ -1,19 +1,10 @@
 "use client";
-// import Image from "next/image";
-
-import Project from "./components/project";
 import { ReactTyped } from "react-typed";
 import { Spotlight } from "./components/ui/Spotlight";
-import Link from "next/link";
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
-import { CardContainer, CardBody, CardItem } from "./components/ui/3d-card";
-import { useRef } from "react";
-import CoolCard from "./components/CoolCard";
 import ProjectSection from "./components/ProjectSection";
 import SkillsSection from "./components/SkillsSection";
 import image from "../public/vercel.svg";
-import MainNavbar from "./components/MainNavbar";
-import { Glow } from "@codaworks/react-glow";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export default function Home() {
   interface BoldTextProps {
@@ -29,26 +20,24 @@ export default function Home() {
   return (
     <div
       className={`
-w-screen max-w-[1400px] mx-auto lg:px-44 px-20
-        antialiased leading-relaxed text-zinc-400 selection:bg-amber-300 selection:text-amber-900 p-10`}
+w-screen max-w-[1400px] mx-auto lg:px-44 px-5
+        antialiased leading-relaxed text-zinc-400 p-5`}
     >
       <Spotlight
         className="lg:-top-80 lg:-left-32 sm:-top-80 sm:-left-20 md:visible md:-top-96 md:-left-80 invisible "
         fill="skyblue"
       />
-      <div className="mx-auto py-12 font-sans md:py-20 lg:py-0">
+      <div className="mx-auto py-12 pt-8 font-sans md:py-20 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
           <header className="lg:top-0 lg:flex lg:max-h-screen lg:w-2/3 lg:flex-col lg:justify-between lg:py-24">
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl text-shadow-xl shadow-black/[.5]">
                 <a href="/">Mihir Malaviya</a>
               </h1>
-              <h2 className="mt-3 text-lg font-medium tracking-tight text-primary-300 sm:text-xl w-fit text-shadow-sm shadow-primary-200/[.2]">
+              <h2 className="mt-3 text-lg font-medium tracking-tight text-primary-300 sm:text-xl w-fit text-shadow-sm shadow-primary-200/[.2] lg:hover:animate-pulse">
                 <ReactTyped
                   strings={["Aspiring Software Engineer"]}
                   typeSpeed={60}
-                  // loop
-                  // backSpeed={20}
                   cursorChar="_"
                   showCursor={true}
                 />
@@ -66,9 +55,16 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
                     navigator.clipboard.writeText("mihirmalaviya1@gmail.com");
                   }}
                 >
-                  <u className="underline-offset-4 text-secondary-100 hover:text-secondary-300 bg-secondary-700/[.5] hover:bg-secondary-700/[.6] border border-secondary-100/[.05] p-1 rounded transition duration-200 transform">
-                    mihirmalaviya1@gmail.com
-                  </u>
+                  <Tooltip
+                    content="Click to copy"
+                    className="bg-black bg-opacity-50 px-2 py-1 rounded-lg text-secondary-50 text-sm"
+                    delay={0}
+                    closeDelay={100}
+                  >
+                    <u className="underline-offset-4 text-secondary-100 hover:text-secondary-300 bg-secondary-700/[.5] hover:bg-secondary-700/[.6] border border-secondary-100/[.05] p-1 rounded transition duration-200 transform">
+                      mihirmalaviya1@gmail.com
+                    </u>
+                  </Tooltip>
                 </button>
               </p>
             </div>
@@ -88,33 +84,7 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
         </div>
       </div>
 
-      {/* <div className="mx-auto max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <SkillsSection />
-      </div> */}
-
       <div className="text-shadow-xl shadow-black/[.5]">
-        {/* <Project
-          // image="https://www.seanhalpin.xyz/hp/ai.png"
-          title="My Square Card"
-          description="This is a description of the square card."
-          styles="bg-purple-400 hover:bg-purple-500 border border-purple-300 hover:border-purple-400 hover:border-opacity-75"
-        />
-        <Project
-          // image="https://www.seanhalpin.xyz/hp/ai.png"
-          title="My Square Card"
-          description="This is a description of the square card."
-          styles="bg-purple-400 hover:bg-purple-500 border border-purple-300 hover:border-purple-400 hover:border-opacity-75"
-        />
-        <Project
-          // image="https://www.seanhalpin.xyz/hp/ai.png"
-          title="My Square Card"
-          description="This is a description of the square card."
-          styles="bg-purple-400 hover:bg-purple-500 border border-purple-300 hover:border-purple-400 hover:border-opacity-75"
-        /> */}
-        {/* <CoolCard />
-        <CoolCard />
-        <CoolCard />
-        <CoolCard /> */}
         <h1
           className="text-4xl font-bold text-zinc-100 mt-32 mb-20"
           id="skills"
@@ -176,7 +146,6 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
           title="Spotify Profile"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           descriptionCards={descriptionCards}
-          // image={profileImage}
           image={
             "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/02/94_ui_design_tools_illustration_blog.jpg"
           }
@@ -186,7 +155,6 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
           title="Spotify Profile"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           descriptionCards={descriptionCards}
-          // image={profileImage}
           image={image}
         />
         <ProjectSection
@@ -194,14 +162,11 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-20
           title="Spotify Profile"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           descriptionCards={descriptionCards}
-          // image={profileImage}
           image={image}
         />
       </div>
 
-      {/* <div className="absolute"> */}
-      <div className="grid -z-50 !bg-transparent" />
-      {/* </div> */}
+      <div className="grid -z-50 !bg-transparent invisible lg:visible" />
 
       <footer className="w-100 pb-16 pt-16 text-md text-zinc-400 sm:pb-0 my-10 mx-10 text-center">
         Website built by Mihir Malaviya using React, Next, Tailwind, and Framer

@@ -45,7 +45,7 @@ const CoolCard: React.FC<SpotifyProfileProps> = ({
         perspective: 1000,
       }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="mb-32 lg:h-[300px]
+      className="mb-20 lg:mb-32 lg:h-[300px]
       "
     >
       <div
@@ -69,15 +69,15 @@ const CoolCard: React.FC<SpotifyProfileProps> = ({
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="3"
+              strokeWidth="3"
               stroke="currentColor"
               className="ml-auto mb-auto mr-8 mt-5 size-6 stroke-slate-900 
-            group-hover:stroke-primary-400 group-hover:-translate-y-3 group-hover:translate-x-3 transition duration-300 transform
+            group-hover:stroke-primary-400 group-hover:-translate-y-3 group-hover:translate-x-3 transition duration-300 transform invisible lg:visible
             "
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
               />
             </svg>

@@ -49,7 +49,7 @@ const CustomCursor = () => {
       style={style}
       variants={variants}
       animate="default"
-      className='fixed bg-gradient-to-br from-teal-500/[.75] via-primary-400/[.75] to-purple-500/[.75] w-[400px] h-[400px] rounded-full blur-[200px] -translate-x-50 -translate-y-50 -z-10 pointer-events-none'
+      className='fixed bg-gradient-to-br from-teal-500/[.75] via-primary-400/[.75] to-purple-500/[.75] w-[400px] h-[400px] rounded-full blur-[200px] -translate-x-50 -translate-y-50 -z-10 pointer-events-none lg:visible invisible'
       
       transition={{
         x: {

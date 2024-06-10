@@ -27,9 +27,9 @@ const Table: React.FC<TableProps> = ({ data }) => {
       <div key={rowIndex} className="flex">
         {data.map((column, colIndex) => (
           <div key={colIndex} className="flex-1 mr-10 my-2">
-            <DescriptionBadge key={colIndex} className="w-fit not-italic">
+            <p key={colIndex} className="w-fit not-italic">
               {column[1][rowIndex] || ""}
-            </DescriptionBadge>
+            </p>
           </div>
         ))}
       </div>

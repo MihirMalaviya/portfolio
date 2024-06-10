@@ -27,7 +27,7 @@ export default function RootLayout({
         />
       </head>
       {/* <body className={inter.className}></body> */}
-      <body className="!bg-stone-950 overflow-x-hidden scroll-smooth">
+      <body className="!bg-stone-950 overflow-x-hidden scroll-smooth selection:bg-secondary-300 selection:text-secondary-900">
         <MouseEffect />
         <MainNavbar />
 
