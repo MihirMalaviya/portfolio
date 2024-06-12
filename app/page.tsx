@@ -44,7 +44,8 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-5
                 {/* Aspiring Software Engineer 💻 */}
               </h2>
               <p className="mt-4 max-w-xs leading-normal text-shadow-lg shadow-black/[.5]">
-                Please hire me. Please hire me. Please hire me. Please hire me.
+                Hi, I like to play games and make code small projects in my free
+                time.
               </p>
               <br />
               <br />
@@ -74,11 +75,9 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-5
               About Me
             </h2>
             <p className="mb-4 text-shadow-lg shadow-black/[.5]">
-              Please hire me. Please hire me. Please hire me. Please hire me.
-              Please hire me. Please hire me. Please hire me. Please hire me.
-              Please hire me. Please hire me. Please hire me. Please hire me.
-              Please hire me. Please hire me. Please hire me. Please hire me.
-              Please hire me. Please hire me. Please hire me. Please hire me.
+              Ever since I was young I loved to code. I coded small online
+              games, and discord bots that I hosted on my old laptop. I have a
+              lot of experience in AI, webdev, and Python.
             </p>
           </div>
         </div>
@@ -135,6 +134,21 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-5
 
         <ProjectSection
           label="Featured Project"
+          title="Audigen"
+          description="A user-friendly AI audio transcription tool, precise down to the millisecond, that could be applied for audio
+editing purposes, to solve the problem of having to listen to audio snippets over and over to know where to cut. **Won 1st place in HackMCST Hackathon.**"
+          descriptionCards={[
+            "Python",
+            "Google Speech Recognition",
+            "OpenAI API",
+            "NumPy",
+            "Pygame",
+          ]}
+          image={""}
+        />
+
+        <ProjectSection
+          label="Featured Project"
           title="MCST GPA Calculator"
           description="A GPA calculator website tailored to fit the grading system of my highschool, the Morris County School of Technology."
           descriptionCards={["React", "Next", "Tailwind"]}
@@ -143,26 +157,27 @@ w-screen max-w-[1400px] mx-auto lg:px-44 px-5
         />
         <ProjectSection
           label="Featured Project"
-          title="Spotify Profile"
-          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          descriptionCards={descriptionCards}
-          image={
-            "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/02/94_ui_design_tools_illustration_blog.jpg"
-          }
+          title="Chat YouTube"
+          description="A desktop application that takes a link to a Youtube video and lets the user to chat with the video using AI."
+          descriptionCards={[
+            "Python",
+            "Gemini API",
+            "Youtube API",
+            "PySimpleGUI",
+          ]}
+          image={""}
         />
         <ProjectSection
           label="Featured Project"
-          title="Spotify Profile"
-          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          descriptionCards={descriptionCards}
-          image={image}
-        />
-        <ProjectSection
-          label="Featured Project"
-          title="Spotify Profile"
-          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          descriptionCards={descriptionCards}
-          image={image}
+          title="Personality AI"
+          description="An easy-to-use terminal application where the user can train their own AI chatbot. They can either choose to give the name of a famous character and have the AI auto train on it, or feed it a simulated conversation for it to replicate."
+          descriptionCards={[
+            "Python",
+            "Gemini API",
+            "Google Speech Recognition",
+            "Text to Speech",
+          ]}
+          image={""}
         />
       </div>
 
